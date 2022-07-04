@@ -1,0 +1,29 @@
+.advantage__quality {
+  @include font(null, 14px, 1.14, 0.03em);
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  @include font(null, 14px, 1.71, 0.03em);
+  max-width: 270px;
+}
+
+.advantage__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------------ІКОНКИ---------------- */
+
+.advantage__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

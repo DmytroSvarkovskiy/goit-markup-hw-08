@@ -1,8 +1,14 @@
 .modal-form__title {
-  @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+  @media screen and (min-width: 320px) {
+    @include font(700, 20px, 1.5, 0.03em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, null, 1.15, null);
+  }
 }
 
 .modal-form__label {
@@ -14,11 +20,18 @@
 }
 
 .modal-form__agreement {
-  @include font(null, 14px, 1.71, 0.03em);
   color: var(--primary-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and(min-width:320px) {
+    flex-wrap: wrap;
+    @include font(null, 12px, 1.17, 0.03em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 14px, 1.71, null);
+  }
 }
 
 .modal-form__agreement-link {

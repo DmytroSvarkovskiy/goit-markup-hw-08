@@ -132,17 +132,32 @@
               <div class="type-of-work">
                 <p class="type-of-work__text">Десктопные приложения</p>
               </div>
-              <img src="./images/pc.jpg" alt="работа за компьютером" width="370" />
+              <img
+                srcset="./images/desk-pc.jpg 1x, ./images/desk-appx2-min.jpg 2x"
+                src="./images/desk-pc.jpg"
+                alt="работа за компьютером"
+                width="370"
+              />
             </li>
 
             <li class="our-work__item">
               <div class="type-of-work"><p class="type-of-work__text">Мобильные приложения</p></div>
-              <img src="./images/notebook.jpg" alt="работа за ноутбуком" width="370" />
+              <img
+                srcset="./images/desk-notebook.jpg 1x, ./images/desk-mobappx2jpg-min.jpg 2x"
+                src="./images/desk-notebook.jpg"
+                alt="работа за ноутбуком"
+                width="370"
+              />
             </li>
 
             <li class="our-work__item">
               <div class="type-of-work"><p class="type-of-work__text">Дизайнерские решения</p></div>
-              <img src="./images/tablet.jpg" alt="работа с планшетом" width="370" />
+              <img
+                srcset="./images/desk-tablet.jpg 1x, ./images/deskdesingerx2-min.jpg 2x"
+                src="./images/desk-tablet.jpg"
+                alt="работа с планшетом"
+                width="370"
+              />
             </li>
           </ul>
         </div>
@@ -153,7 +168,22 @@
           <h2 class="workers__title">Наша команда</h2>
           <ul class="workers__list list">
             <li class="workers__item">
-              <img src="./images/i.demyanenko.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  class="workers__picture"
+                  srcset="./images/des-demyanenko.jpg 1x, ./images/desk-demyanenko-x2jpg-min.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <source
+                  class="workers__picture"
+                  srcset="./images/tab-demyanenko-min.jpg 1x, ./images/tab-demyanenko-x2-min.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  class="workers__picture"
+                  srcset="./images/tel-igor.d-min.jpg 1x, ./images/tel-igor.d-x2-min.jpg 2x"
+                  media="(min-width: 480px)" />
+                <img src="./images/des-demyanenko.jpg" alt="Игорь Демьяненко"
+              /></picture>
               <div class="employees">
                 <h3 class="wokers__names">Игорь Демьяненко</h3>
                 <p class="workers__position">Product Designer</p>
@@ -186,7 +216,19 @@
               </div>
             </li>
             <li class="workers__item">
-              <img src="./images/o.repina.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desk-o-repina.jpg 1x, ./images/desk-olha-x2-min.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <source
+                  srcset="./images/tab-repina-min.jpg 1x, ./images/tab-repina-x2-min.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/tel-olgajpg-min.jpg 1x, ./images/tel-olga-x2-min.jpg 2x"
+                  media="(min-width: 480px)" />
+                <img src="./images/desk-o-repina.jpg" alt="Ольга Репина"
+              /></picture>
               <div class="employees">
                 <h3 class="wokers__names">Ольга Репина</h3>
                 <p class="workers__position">Frontend Developer</p>
@@ -219,7 +261,19 @@
               </div>
             </li>
             <li class="workers__item">
-              <img src="./images/n.tarasov.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desk-n.tarasov.jpg 1x, ./images/desk-tarasov-x2-min.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <source
+                  srcset="./images/tab-tarasov-min.jpg 1x, ./images/tab-tarasov-x2-min.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/tel-tarasov-min.jpg 1x, ./images/tel-terasov-x2-min.jpg 2x"
+                  media="(min-width: 480px)" />
+                <img src="./images/desk-n.tarasov.jpg" alt="Николай Тарасов"
+              /></picture>
               <div class="employees">
                 <h3 class="wokers__names">Николай Тарасов</h3>
                 <p class="workers__position">Marketing</p>
@@ -252,7 +306,19 @@
               </div>
             </li>
             <li class="workers__item">
-              <img src="./images/m.ermakov.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desk-ermakov.jpg 1x, ./images/desk-ermakov-x2-min.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <source
+                  srcset="./images/tab-ermakov-min.jpg 1x, ./images/tab-ermakov-x2-min.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/tel-ermakov-min.jpg 1x, ./images/tel-emakov-x2-min.jpg 2x"
+                  media="(min-width: 480px)" />
+                <img src="./images/desk-ermakov.jpg" alt="Михаил Ермаков"
+              /></picture>
               <div class="employees">
                 <h3 class="wokers__names">Михаил Ермаков</h3>
                 <p class="workers__position">UI Designer</p>

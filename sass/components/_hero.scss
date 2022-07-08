@@ -2,10 +2,10 @@
 .hero {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/telheaderimg-min.jpg);
+    url(./images/telheaderimg-min.jpg);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/tel-headerimg-x2-min.jpg);
+      url(./images/tel-headerimg-x2-min.jpg);
   }
   background-repeat: no-repeat;
   background-color: #c4c4c4;
@@ -21,19 +21,19 @@
   @media screen and(min-width:481px) {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/tab-header-min.jpg);
+      url(./images/tab-header-min.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/tab-header-x2-min.jpg);
+        url(./images/tab-header-x2-min.jpg);
     }
   }
   @media screen and(min-width:769px) {
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/deskbckg-img.jpg);
+      url(./images/deskbckg-img.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/desk-hero-x2-min.jpg);
+        url(./images/desk-hero-x2-min.jpg);
     }
   }
 

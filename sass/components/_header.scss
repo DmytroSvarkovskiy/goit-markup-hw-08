@@ -1,4 +1,7 @@
 .header {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
   border-bottom: 1px solid #ececec;
   background-color: var(--main-color-background);
   .conteiner {
@@ -9,14 +12,16 @@
 .header__link.current {
   color: var(--accent-color);
   position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    bottom: -1px;
+  @media screen and(min-width:768px) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      bottom: -1px;
+    }
   }
 }
 
@@ -24,13 +29,10 @@
 
 .logo {
   font-family: 'Raleway', sans-serif;
-
+  @include font(null, 24px, 1.17, 0.03em);
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
-  @media screen and(min-width: 320px) {
-    @include font(null, 24px, 1.17, 0.03em);
-  }
   @media screen and(min-width: 1200px) {
     @include font(null, 26px, 1.19, null);
   }
@@ -47,16 +49,21 @@
 /*------------------------Navigation-------------------*/
 
 .header__link {
-  @include font(500, 14px, 1.14, 0.02em);
-  color: var(--title-text-color);
-  display: flex;
-  align-items: center;
+  @include font(500, 40px, 1.18, 0.02em);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  color: var(--title-text-color);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and(min-width:768px) {
+    @include font(null, 14px, 1.14, null);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -67,10 +74,12 @@
 }
 
 .header__list {
-  display: flex;
-  align-items: center;
-  &:last-child {
-    margin-left: auto;
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-left: auto;
+    }
   }
 }
 .nav {

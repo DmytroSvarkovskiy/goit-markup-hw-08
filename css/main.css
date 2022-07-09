@@ -128,10 +128,9 @@ img {
 }
 
 .menu {
-  position: fixed;
   display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
@@ -1219,33 +1218,12 @@ img {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 50px;
+  column-gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
-  }
-}
-
-.btn-list__item {
-  margin-left: 8px;
-}
-.btn-list__item:not(:nth-last-child(-n+2)) {
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 480px) {
-  .btn-list__item:first-child {
-    margin-left: 0px;
-  }
-  .btn-list__item:nth-last-child(2) {
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .btn-list__item:not(:nth-last-child(-n+2)) {
-    margin-bottom: 0;
-  }
-  .btn-list__item:not(:first-child) {
-    margin-left: 8px;
   }
 }
 
@@ -1271,10 +1249,15 @@ img {
 }
 
 .portfolio.list {
-  display: flex;
-  margin: 0 auto;
+  justify-content: center;
   flex-wrap: wrap;
+  display: flex;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio.list {
+    justify-content: flex-start;
+  }
 }
 
 .portfolio__link {
